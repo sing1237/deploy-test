@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('deploy', 'DeployController@deploy');
+
+Route::post('hogeacheck', function(){
+    echo "ho gea check";
+});
