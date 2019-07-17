@@ -1,0 +1,63 @@
+.btn
+{
+        @include border-radius(3px);
+        padding: 15px 25px;
+        font-weight:$font-weight-normal;
+        font-style: normal;
+        border-radius: 2px;
+        font-size: 18px;
+        position: relative;
+
+
+    &:hover,
+    &:focus,
+    &:active
+    { 
+        box-shadow: none; 
+        outline:0;
+         
+    }
+} 
+
+.link-btn
+{
+    font-size:14px;
+    font-family:$US-medium;
+    font-weight:$font-weight-normal;
+    line-height: 2.29;
+
+    @media screen and (max-width:1599px)
+    { 
+        font-size: 12px; 
+     }
+
+    .arrow_svg
+    {
+        margin-left: 10px;
+        
+    @media screen and (max-width:1599px)
+    { 
+        margin-left: 5px;
+     }
+    }
+}
+
+
+body .arrow_svg
+{
+    width: 16px;
+    height: 12px;
+vertical-align: middle;
+
+    .cls-1{fill:none;stroke:#141414;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px}
+
+
+    @media screen and (max-width:1599px)
+    { 
+        width: 13px;
+        margin-top: -4px;
+        height: 10px;
+     }
+}
+
+

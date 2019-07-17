@@ -1,0 +1,74 @@
+
+// Colors
+$color-primary:#141414 ;  
+$color-black:#000; 
+$color-white:#fff;
+$color-hover:rgba(20, 20, 20, 0.25);
+$color-white-hover:rgba(255, 255, 255, 0.25);
+
+
+ 
+//path   
+  
+$assets:'../';
+$fonts:'../fonts/';
+$images:'../images/';
+$js:'../js/';     
+
+
+
+// Brand color
+$color-facebook: #5182FF;
+$color-feedly: #2bb24c;
+$color-github: #333;
+$color-google: #dc4e41; 
+$color-instagram: #3f729b;
+$color-linkedin: #0077b5;
+$color-medium: #00ab6b;
+$color-messenger: #0084ff;
+$color-rss: #f26522;
+$color-spotify: #2ebd59; 
+$color-twitter: #33C9D2;
+$color-red:#f00;
+$color-youtube:#df493b;
+$color-imark:#26a9e0;
+$bg-grey-color:#f6f6f6; 
+  
+// Font Size
+$font-size-biggest: 2.8rem;
+$font-size-largest: 2.3rem;
+$font-size-large: 1.2rem; 
+$font-size-base: 1rem;
+$font-size-small: .9rem;
+$font-size-smallest: .75rem; 
+  
+// Spacing
+$spacing-small: .75rem;
+$spacing-single: 1rem;
+$spacing-double: 2rem;
+$spacing-triple: 3rem;
+$spacing-big: 6rem;  
+
+// Media queries
+$desktop: 800px;  
+$tablet: 600px;
+$mobile: 480px;
+   
+// Font Family
+
+
+$US-ragular : 'UntitledSans-Regular';
+$US-medium :'UntitledSans-Medium';
+$US-light : 'UntitledSans-Light';
+$US-bold : 'UntitledSans-Bold';
+
+//font-weight
+$font-weight-light:300;
+$font-weight-normal:normal;
+$font-weight-medium:500;
+$font-weight-semi-bold:600;
+$font-weight-bold:700;
+ 
+// Animation
+$anime-in: .4s;
+$anime-out: .5s; 

@@ -1,0 +1,330 @@
+ /** RESET only css **/
+* {
+	margin: 0;
+	padding: 0;
+	&,
+	&:after,
+	&:before {
+		@include box-sizing; 
+		font-kerning: none;
+	}
+}
+
+label {
+	font-weight: normal;
+    margin-bottom: 0;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+select,
+textarea { 
+	@include appearance(none); 
+	background-clip: border-box;
+	margin: 0;
+	outline: 0;
+	vertical-align: top;
+	width: 100%;
+    
+    &:focus
+    {
+       box-shadow: none !important; 
+    }
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+	width: auto;
+	height: auto;
+}
+
+input[type='checkbox'] {
+	appearance: checkbox;
+}
+
+input[type='radio'] {
+	appearance: radio;
+	vertical-align: -1px;
+}
+
+select[multiple],
+select[size],
+textarea {
+	height: auto;
+}
+// remove dropdown for IE10
+select
+{
+    cursor: pointer;
+}
+select::-ms-expand {
+	display: none;
+}
+//remove IE11 select element selected option state
+
+select:focus::-ms-value {
+	background-color: transparent;
+	color: inherit;
+}
+//Allow only vertical resizing of textareas
+
+textarea {
+	resize: none;
+}
+//remove search controls
+
+input[type='search']::-webkit-search-decoration {
+	display: none;
+}
+
+/* For Firefox */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+*:focus {
+	outline: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;	
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style:italic;
+}
+
+.clr {
+	border: 0;
+	clear: both;
+	height: 0;
+}
+.no-padding
+{
+    padding-left:0;
+    padding-right:0;
+}
+.no-margin
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+body
+{
+    overflow-x: hidden;
+}
+body,
+html {
+	width: 100%;
+    min-height:100%;
+    overflow-x: hidden;
+    
+     @include breakpoint(ipad)
+        {
+            overflow-x: hidden;
+            height: auto;
+        }
+
+     &.modal-active {
+    overflow: hidden; 
+     }
+
+  &.full-height
+  {
+    height:100%;
+  }
+ }
+body
+{
+	font-family:$US-ragular;  
+	font-weight: $font-weight-normal; 
+
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6,
+p {
+	font-weight: $font-weight-normal;
+	margin: 0;
+	padding: 0;
+	color: $color-primary; 
+	transition: all ease-in-out 0.5s;
+	}
+
+	a {
+		color:#000; 
+		text-decoration: none; 
+		@include transition;
+		
+		&:hover,
+		&:focus {
+			color: #3f3f3f; 
+			text-decoration: none; 
+		}
+	}
+
+
+	
+
+	&.dark-theme
+	{
+		h1,
+		h2,
+		h3, 
+		h4,
+		h5,
+		h6,
+		p {
+			color: $color-white; 
+		}
+
+		a {
+			color:$color-white; 
+		}
+	}
+
+}
+figure 
+{
+    margin-bottom: 0;
+}
+
+ul,ol,li
+{
+    list-style: none; 
+    margin: 0; 
+    padding:0;
+}
+
+h1, h2 {
+    letter-spacing:normal;
+}
+
+
+.inline {
+	display: inline-block !important;
+}
+
+.block {
+	display: block !important;
+}
+
+.shown {
+	display: inline-block;
+
+	&.block {
+		display: block;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.relative {
+	position: relative;
+}
+
+label
+{
+    margin-bottom: 0;
+}
+
+//Scrollbar styling for webkit
+::-webkit-scrollbar { 
+	min-width: 4px;
+	width: 0.15%;
+	max-width: 4px;
+	height: 3px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+	background: #171719;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb {
+	background: $color-primary; 
+}
+// SVG reset
+svg:not(:root) {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.wpcf7-response-output {
+    padding: 15px !important;
+    margin: 0 !important;
+    border: 1px solid transparent !important;
+    border-radius: 0;
+    font-size: 15px;
+
+    @include breakpoint(normal) { 
+        & {
+            font-size: 13px;
+            padding: 10px !important;
+        }
+    } 
+}
+
+.wpcf7-validation-errors,
+.wpcf7-acceptance-missing {
+    color: #a94442; 
+    background-color: #f2dede;
+    border-color: #ebccd1;
+} 
+
+.wpcf7-mail-sent-ok {  
+    color: #3c763d;
+    background-color: #dff0d8; 
+    border-color: #d6e9c6; 
+}
+
+input.wpcf7-not-valid {
+    border-color: #f00 !important;
+}
+ 
+span.wpcf7-not-valid-tip {
+    display: none !important;
+} 
+
+
+
+@media (min-width: 1600px)
+{
+	.container {
+		max-width: 1530px;
+	}
+}
+
+
+
+
+ 
+ 

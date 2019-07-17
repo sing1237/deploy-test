@@ -1,0 +1,125 @@
+.mainloader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$color-white;
+    z-index: 99999;
+    
+    img 
+    { 
+        width: 60px;
+        -webkit-animation: sm 4s infinite; /* Safari 4.0 - 8.0 */
+        animation: sm 4s infinite;
+    }
+  }
+
+
+
+#top_arrow {
+  display: inline-block;
+  background-color: $color-primary;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  position: fixed; 
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#top_arrow::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 3;
+  color: #fff;
+}
+#top_arrow:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#top_arrow:active { 
+  background-color: #555;
+}
+#top_arrow.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
+.order-minus
+{ 
+    order: -1;
+}  
+
+
+ .modal-backdrop.show {
+    opacity: .8;
+} 
+
+  .display_flex
+{
+    display: flex;
+
+    &.flex_space_between
+    {
+        justify-content:space-between !important; 
+    }
+    &.flex_justify_center
+    {
+        justify-content: center;
+    }
+    &.flex_justify_end
+    {
+      justify-content: flex-end
+    } 
+    &.flex_justify_start 
+    {
+      justify-content: flex-start
+    }
+    &.flex_align_center
+    {
+      align-items: center;
+    }
+    &.flex_align_start
+    {
+      align-items: flex-start;
+    }
+}
+
+.dot_list
+{
+    li
+    {
+        position:relative;
+        padding-left: 20px;
+
+        &:before
+        {
+            content:'';
+            position: absolute;
+            top:8px;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            background-color: $color-black;
+            border-radius: 100%;
+        }
+    }
+}
+

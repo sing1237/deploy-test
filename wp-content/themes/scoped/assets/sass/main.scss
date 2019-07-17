@@ -1,0 +1,50 @@
+/*!
+CSS Document
+Project Name: Deckend
+Project Description:
+Written By: iMark Infotech - Harwinder Singh
+Created On:20/11/2018
+Last Modified:
+*/
+
+
+// Vendors and external stylesheets\
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "vendors/bootstrap";
+// @import "vendors/font-awesome";
+// @import "vendors/slick";    
+@import "vendors/animate";    
+@import "vendors/jquery.mCustomScrollbar.min";    
+
+  
+// Sass utilities 
+@import "helpers/functions";  
+@import "helpers/mixins";   
+@import "helpers/variables";    
+
+// Base stuff    
+@import "base/reset";  
+@import "base/typography";    
+@import "vendors/fonts";    
+@import "vendors/datatables.min";       
+@import "vendors/price_range_style";       
+  
+// Layout related stylesheets 
+@import "layout/header";  
+@import "layout/footer";   
+@import "layout/sidebar"; 
+@import "layout/forms";
+@import "layout/style"; 
+ 
+// Components and modules
+@import "components/buttons";  
+@import "components/pagination";  
+@import "components/tabs";  
+
+// Page-specific stylesheets
+@import "pages/home";
+@import "pages/thankyou";
+
+// Themes
+@import "themes/theme"; 
+@import "themes/admin";
